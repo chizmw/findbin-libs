@@ -5,7 +5,7 @@ WriteMakefile
 (
 
   NAME          => 'FindBin::libs',
-  VERSION       => '1.55',
+  VERSION_FROM  => 'lib/FindBin/libs.pm',
   ABSTRACT_FROM => 'lib/FindBin/libs.pm',
   PREREQ_PM     =>
   {
@@ -13,6 +13,7 @@ WriteMakefile
     # are unlikely to cause pain.
 
     strict      => 0,
+    version     => 0,
     warnings    => 0,
     Carp        => 0,
     Cwd         => 0,
