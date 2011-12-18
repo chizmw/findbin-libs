@@ -10,7 +10,7 @@
 
 package FindBin::libs;
 
-our $VERSION=1.58;
+our $VERSION=v1.60;
 
 # use the older code suitable for v5.8 if we are 
 # running on anything before v5.12.

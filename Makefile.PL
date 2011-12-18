@@ -8,7 +8,7 @@ WriteMakefile
     # botch MakeMaker and the modules use v-strings.
 
     NAME          => 'FindBin::libs',
-    VERSION       => '1.59',
+    VERSION       => 'v1.60',
     ABSTRACT_FROM => 'lib/FindBin/libs.pm',
     PREREQ_PM     =>
     {
