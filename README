@@ -16,6 +16,12 @@ several ways of passing in switches. The one used here
 was chosen because it supports qw( ... ) syntax with 
 optional parameters (e.g., qw(export) and qw(export=foo)).
 
+The module FindBin::libs is currently rather minimal: all
+it does is check the current version and require either
+libs_5_8.pm or libs_curr.pm. The former is used for anything
+prior to v5.12; the latter may contain more recent syntax
+(e.g. "//" or "~~").
+
 Installation:
 
 	perl Makefile.PL;

@@ -2,7 +2,8 @@
 
 package Testophile;
 
-use v5.10;
+use v5.8;
+
 no warnings;    # avoid extraneous nastygrams about qw
 
 use Test::More tests => 5;
@@ -22,11 +23,13 @@ BEGIN
     eval { symlink qw( /nonexistant/path/to/foobar ./foobar ) }
 }
 
-use FindBin::libs qw( export                                            );
-use FindBin::libs qw( export=found base=lib                             );
-use FindBin::libs qw( export=binz  base=bin            ignore=/foo,/bar );
-use FindBin::libs qw( export=junk  base=frobnicatorium                  );
-use FindBin::libs qw( export       base=foobar                          );
+require FindBin::libs;
+
+FindBin::libs->import( qw( export                                            ) );
+FindBin::libs->import( qw( export=found base=lib                             ) );
+FindBin::libs->import( qw( export=binz  base=bin            ignore=/foo,/bar ) );
+FindBin::libs->import( qw( export=junk  base=frobnicatorium                  ) );
+FindBin::libs->import( qw( export       base=foobar                          ) );
 
 # clean up temp files on the way out.
 
