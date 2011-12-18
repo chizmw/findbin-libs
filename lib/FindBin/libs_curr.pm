@@ -82,7 +82,7 @@ BEGIN
 # package variables 
 ########################################################################
 
-our $VERSION = v1.60;
+use FindBin::libs::Version;  our $VERSION = $FindBin::libs::VERSION;
 
 my %defaultz = 
 (
