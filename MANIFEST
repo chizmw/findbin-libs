@@ -1,4 +1,6 @@
 lib/FindBin/libs.pm
+lib/FindBin/libs_5_8.pm
+lib/FindBin/libs_curr.pm
 CHANGES
 MANIFEST
 META.yml

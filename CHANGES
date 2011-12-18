@@ -1,3 +1,23 @@
+1.58 Fri Dec 16 13:06:42 CST 2011
+
+Hopefully the metadata is un-screwed up enough for
+the thing to succeed at this point.
+
+1.57 Fri Dec 16 12:26:13 CST 2011
+
+So much for midnight hacks... simplified
+the test for older versions: libs.pm is
+the current version, libs_5_8.pm is stable
+for the older perl's.
+
+1.56 Thu Nov 24 10:26:00 CST 2011
+
+Added "use if $^V < v5.12" to pull in version
+of code useful with v5.8 and later. Basically
+this just puts a rather thin layer in front of
+the older code vs. newer (which will use switches
+for some of the logic, among other things). 
+
 1.55 Wed Nov 23 16:50:57 CST 2011
 
 Fix version-string bug in Makefile.PL
