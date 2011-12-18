@@ -20,7 +20,8 @@
 # housekeeping
 ########################################################################
 
-package FindBin::libs;
+package # hide from PAUSE
+    FindBin::libs;
 
 use v5.12;
 use strict;
