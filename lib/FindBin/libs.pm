@@ -17,7 +17,7 @@ our $VERSION=v1.60;
 
 BEGIN
 {
-$DB::single = 1;
+    $DB::single = 1 if defined $argz{debug};
 
     $^V < v5.12
     ? require FindBin::libs_5_8
